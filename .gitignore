@@ -1,1 +1,5 @@
-/bin/
+# typical Java template
+bin/
+target/
+*.class
+
