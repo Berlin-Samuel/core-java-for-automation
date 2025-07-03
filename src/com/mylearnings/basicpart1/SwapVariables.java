@@ -4,7 +4,7 @@ package com.mylearnings.basicpart1;
 
 import java.util.Scanner;
 
-public class SwapVariables {
+public class SwapVariables{
 
 	public static void main(String[] args) {
 		Scanner getInput = new Scanner(System.in);
