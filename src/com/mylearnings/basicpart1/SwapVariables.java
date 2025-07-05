@@ -9,6 +9,7 @@ public class SwapVariables{
 	public static void main(String[] args) {
 		Scanner getInput = new Scanner(System.in);
 		int firstValue, secondValue, afterSwapping;
+		System.out.println("--------------");
 		System.out.println("Enter the First Value");
 		firstValue = getInput.nextInt();
 		System.out.println("Enter the Second Value");
