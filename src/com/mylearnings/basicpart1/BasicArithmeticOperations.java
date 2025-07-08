@@ -46,9 +46,12 @@ public class BasicArithmeticOperations {
 			c = a % b;
 			System.out.println("The remainder of two numbers are " + a + "%" + b + "=" + c);
 			break;
+
+		default:
+			System.out.println("Enter the correct operator");
+
+			scr.close();
+
 		}
-		scr.close();
-
 	}
-
 }
