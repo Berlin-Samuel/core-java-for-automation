@@ -18,6 +18,7 @@ public class AverageofThreeNumbers {
 		scr.close();
 		double avg = (x / input.length);
 		System.out.println("The Average of the given numbers are " + avg);
-
+		final int k = 12;
+		System.out.println(k);
 	}
 }

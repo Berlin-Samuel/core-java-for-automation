@@ -4,7 +4,7 @@ Input a degree in Fahrenheit: 212
 Expected Output:
 212.0 degree Fahrenheit is equal to 100.0 in Celsius*/
 
-package com.mylearnings.datatypes;
+package com.mylearnings.basicpart1;
 
 import java.util.Scanner;
 
