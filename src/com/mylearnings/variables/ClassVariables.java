@@ -1,8 +1,8 @@
 /**
- * FileName: LocalVariable_1.java
+ * FileName: ClassVariables.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 30-Sept-2025
+ * Date     : 03-Oct-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,33 +24,22 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          30-Sept-2025        Berlin        Initial Code  
+ * 1.0          03-Oct-2025        Berlin        Initial Code  
  * 
  * @author Berlin
- * @version 1.0 z
- * @since 30-Sept-2025
+ * @version 1.0
+ * @since 03-Oct-2025
  */
 package com.mylearnings.variables;
 
-public class LocalVariable_1 {
-
-	public int myAge() {
-		int age = 0;
-		return (age + 2);
-	}
-
-	public void myAge2() {
-//		int age;
-//		age = age + 7;//compile time error
-		int age = 0;
-		age = age + 7;
-		System.out.println("age is : " + age);
-	}
-
+public class ClassVariables {
+	public static final String UNIVERSITY = "Anna University";
+ 
 	public static void main(String[] args) {
-		LocalVariable_1 localVariable = new LocalVariable_1();
-		System.out.println(localVariable.myAge());
-		localVariable.myAge2();
+		String university2 = ClassVariables.UNIVERSITY;
+		System.out.println(university2 ="Alagappa University");
+		System.out.println(ClassVariables.UNIVERSITY);
+		System.out.println(UNIVERSITY);  
 	}
 
 }

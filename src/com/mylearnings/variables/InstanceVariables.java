@@ -1,8 +1,8 @@
 /**
- * FileName: LocalVariable_1.java
+ * FileName: InstanceVariables.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 30-Sept-2025
+ * Date     : 02-Oct-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,33 +24,24 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          30-Sept-2025        Berlin        Initial Code  
+ * 1.0          02-Oct-2025        Berlin        Initial Code  
  * 
  * @author Berlin
- * @version 1.0 z
- * @since 30-Sept-2025
+ * @version 1.0
+ * @since 02-Oct-2025
  */
 package com.mylearnings.variables;
 
-public class LocalVariable_1 {
+public class InstanceVariables {
 
-	public int myAge() {
-		int age = 0;
-		return (age + 2);
-	}
-
-	public void myAge2() {
-//		int age;
-//		age = age + 7;//compile time error
-		int age = 0;
-		age = age + 7;
-		System.out.println("age is : " + age);
-	}
+	String srt;
 
 	public static void main(String[] args) {
-		LocalVariable_1 localVariable = new LocalVariable_1();
-		System.out.println(localVariable.myAge());
-		localVariable.myAge2();
+		InstanceVariables instanceVariable = new InstanceVariables();
+		System.out.println(instanceVariable.srt = "hello");
+		instanceVariable.srt = "welcome";
+		System.out.println(instanceVariable.srt);
+		// System.out.println(InstanceVariable1.str);//variable is declared with private
+		// cannot be accessed
 	}
-
 }
