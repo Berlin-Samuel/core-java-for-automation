@@ -33,7 +33,7 @@
 package com.mylearnings.variables;
 
 public class ClassVariables {
-	public static final String UNIVERSITY = "Anna University";
+	public static String UNIVERSITY = "Anna University";
  
 	public static void main(String[] args) {
 		String university2 = ClassVariables.UNIVERSITY;
