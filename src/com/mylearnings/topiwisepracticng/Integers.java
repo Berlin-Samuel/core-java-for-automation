@@ -1,5 +1,5 @@
 /**
- * FileName: example1.java
+ * FileName: Integers.java
  * Author   : Admin
  * Version  : 1.0
  * Date     : 16-Oct-2025
@@ -30,27 +30,14 @@
  * @version 1.0
  * @since 16-Oct-2025
  */
-package com.mylearnings.arrays;
+package com.mylearnings.topiwisepracticng;
 
-import java.util.Scanner;
-
-public class example1 {
+public class Integers {
 	public static void main(String[] args) {
-		Scanner scr = new Scanner(System.in);
-		System.out.println("Enter the initial Value");
-		int n = scr.nextInt();
-		int arr[] = new int[n];
-		System.out.println("Enter " + n + " elements:");
-		int i = 0;
-		while (i < n) {
-			arr[i] = scr.nextInt();        
-			i++;
+		int c;
+		for (c = 1; c <= 10; c++) {
+			System.out.println(c);
 		}
-		System.out.println("Array elements are:");
-		for (int j = 0; j < n; j++) {
-			System.out.println(arr[j]);
-		}
-		scr.close();
 	}
-
 }
+ 
