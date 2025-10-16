@@ -37,41 +37,30 @@ import java.util.Scanner;
 public class Example2 {
 	public static void main(String[] args) {
 		Scanner scr = new Scanner(System.in);
-		System.out.println("Enter the limit");
+		System.out.println("Enter the limit:");
 		int num = scr.nextInt();
-		int arr[] = new int[num];
-		System.out.println("Enter " + num + " elements:");
-		int i = 0;
+		// check if limit is valid
 		if (num <= 5) {
-			while (i < num) {
+			int[] arr = new int[num]; // initialize array
+			System.out.println("Enter " + num + " elements:");
+			int i = 0;
+			while (i < num) { // use < instead of <= to avoid ArrayIndexOutOfBoundsException
 				arr[i] = scr.nextInt();
 				i++;
 			}
-			int select;
-			System.out.println("Enter the index of the array");
-			switch (select =scr.nextInt()) {
-			case 0:
-				System.out.println("The index of 0 is " + arr[0]);
-				break;
-			case 1:
-				System.out.println("The index of 1 is " + arr[1]);
-				break;
-			case 2:
-				System.out.println("The index of 2 is " + arr[2]);
-				break;
-			case 3:
-				System.out.println("The index of 3 is " + arr[3]);
-				break;
-			case 4:
-				System.out.println("The index of 4 is " + arr[4]);
-				break;
-			case 5:
-				System.out.println("The index of 5 is " + arr[5]);
-				break;
-
-			default:
-				System.out.println("Array index out of the bound");
+			//System.out.println(arr[i]);
+			System.out.println("Length of the array "+arr.length);
+			System.out.println("Enter the index of the array (0 to " + (num - 1) + "):");
+			int select = scr.nextInt();
+			if (select >= 0 && select < num) {
+				System .out.println("The element at index " + select + " is " + arr[select]);
+			} else {
+				System.out.println("Array index out of bounds");
 			}
+		} else {
+			System.out.println("Enter a limit less than or equal to 5.");
 		}
+
+		scr.close();
 	}
 }
