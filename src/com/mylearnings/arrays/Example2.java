@@ -60,7 +60,6 @@ public class Example2 {
 		} else {
 			System.out.println("Enter a limit less than or equal to 5.");
 		}
-
 		scr.close();
 	}
 }
