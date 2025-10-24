@@ -34,8 +34,8 @@ package com.mylearnings.strings;
 
 public class Example {
 	public static void main(String[] args) {
-		String str = new String("123456");
-		String str1 = "123456";
+		String str = new String("Hello");
+		String str1 = "Hello";
 		System.out.println(str.equals(str1));
 		System.out.println(str);
 	}
