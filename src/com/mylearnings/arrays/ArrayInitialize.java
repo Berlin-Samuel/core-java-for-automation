@@ -38,21 +38,27 @@ public class ArrayInitialize {
 	public static void main(String[] args) {
 		Scanner scr = new Scanner(System.in);
 		System.out.println("Checking Array");
-		int getValue, check;
-		getValue = scr.nextInt();
-		int[] arr1 = new int[getValue];
-		System.out.println("Adding array in :");
-		if (getValue > 0 && getValue <= 10) {
-			for (check = 0; check < getValue; check++) {
-				arr1[check] = scr.nextInt();
+		int getValue;
+		int check;
+		try {
+			getValue = scr.nextInt();
+			int[] arr1 = new int[getValue];
+			if (getValue > 0 && getValue <= 10) {
+				System.out.println("Adding array in :");
+				for (check = 0; check < getValue; check++) {
+					arr1[check] = scr.nextInt();
+				}
+				scr.close();
+				System.out.println("The Values in the Array are :");
+				for (int displayArray = 0; displayArray < arr1.length; displayArray++) {
+					System.out.println(arr1[displayArray]);
+				}
+			} else {
+				System.out.println("Enter the number limit within 10");
 			}
-			System.out.println("The Values in the Array are :");
-			
-			for (int displayArray = 0; displayArray < arr1.length; displayArray++) {
-				System.out.println(arr1[displayArray]);
-			}
+		} finally {
 			scr.close();
-		} else
-			System.out.println("Enter the number limit within 10");
+		}
+
 	}
 }

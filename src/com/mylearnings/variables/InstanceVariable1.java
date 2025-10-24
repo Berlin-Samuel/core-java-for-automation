@@ -33,13 +33,22 @@
 package com.mylearnings.variables;
 
 public class InstanceVariable1 {
-	private String str;
-	private static InstanceVariable1 xyz = null;
+	int maxValue = 100000;
+
+	public int localVariable() {
+		return 100;
+	}
+
+	public double minValue() {
+		return 1200;
+	}
 
 	public static void main(String[] args) {
-		xyz = new InstanceVariable1();
-		xyz.str = xyz.str;
-		System.out.println(xyz.str = "456");
+		InstanceVariable1 instanceVariable = new InstanceVariable1();
+		int newValue = instanceVariable.localVariable();
+		double minValueMethodReturn = instanceVariable.minValue();
+		System.out.println(newValue);
+		System.out.println(minValueMethodReturn);
 	}
 
 }
