@@ -38,7 +38,7 @@ public class InstanceVariable1 {
 
 	public static void main(String[] args) {
 		xyz = new InstanceVariable1();
-		// xyz.str = xyz.str;
+		xyz.str = xyz.str;
 		System.out.println(xyz.str = "456");
 	}
 

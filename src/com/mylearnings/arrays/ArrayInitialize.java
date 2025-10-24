@@ -41,11 +41,13 @@ public class ArrayInitialize {
 		int getValue, check;
 		getValue = scr.nextInt();
 		int[] arr1 = new int[getValue];
+		System.out.println("Adding array in :");
 		if (getValue > 0 && getValue <= 10) {
 			for (check = 0; check < getValue; check++) {
 				arr1[check] = scr.nextInt();
 			}
 			System.out.println("The Values in the Array are :");
+			
 			for (int displayArray = 0; displayArray < arr1.length; displayArray++) {
 				System.out.println(arr1[displayArray]);
 			}

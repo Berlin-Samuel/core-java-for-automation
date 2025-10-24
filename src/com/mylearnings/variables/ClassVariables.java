@@ -37,6 +37,7 @@ public class ClassVariables {
  
 	public static void main(String[] args) {
 		String university2 = ClassVariables.UNIVERSITY;
+		System.out.println(university2);
 		System.out.println(university2 ="Alagappa University");
 		System.out.println(ClassVariables.UNIVERSITY);
 		System.out.println(UNIVERSITY);  
