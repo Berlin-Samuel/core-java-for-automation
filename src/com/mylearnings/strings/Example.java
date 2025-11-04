@@ -41,7 +41,7 @@ public class Example {
 		System.out.println("--------- ");
 		System.out.println(str.charAt(0));
 		System.out.println(str.equals(str1));
-		System.out.println(str);		
+		System.out.println(str);
 		System.out.println("--------- ");
 		String s1 = "Welcome World";
 		System.out.println("--------- ");
@@ -58,14 +58,21 @@ public class Example {
 		System.out.println(Arrays.toString(arr));
 		System.out.println(arr[0]);
 		System.out.println(arr[1]);
-		System.out.println("--------- "); 
+		System.out.println("--------- ");
 		String str2 = "Welcome#123@456";
 		System.out.println(str2.replace("#", "").replace("@", ""));
-		char c=65;
+		char c = 65;
 		System.out.println(c);
 		System.out.println("-----------");
 		System.out.println(s1.equals("WELCOME WORLD"));
 		System.out.println(s1.equalsIgnoreCase("WELCOME WORLD"));
+		System.out.println(s1.substring(2, 5));
+		System.out.println("------------");
+		String str3 = "";
+		System.out.println(str3 + "5");
+		char[] chr = s1.toCharArray();
+		System.out.println(chr[1]);
+		System.out.println(Arrays.toString(chr));
 	}
 
 }
