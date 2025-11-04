@@ -34,10 +34,14 @@ package com.mylearnings.strings;
 
 public class Example {
 	public static void main(String[] args) {
-		String str = new String("Hello");
+		String str = "Hello";
 		String str1 = "Hello";
 		System.out.println(str.equals(str1));
 		System.out.println(str);
+		String s1 = "Welcome World";
+		System.out.println(s1.replace("Welcome", "Hello"));
+		System.out.println(str.compareTo(str1));
+		System.out.println(s1.substring(2,5));
 	}
 
 }
