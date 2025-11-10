@@ -1,5 +1,5 @@
 /**
- * FileName: Greentings.java
+ * FileName: GreentingsMain.java
  * Author   : Admin
  * Version  : 1.0
  * Date     : 10-Nov-2025
@@ -30,26 +30,19 @@
  * @version 1.0
  * @since 10-Nov-2025
  */
-package com.mylearnings.oops;
+package com.mylearnings.methods;
 
-public class Greentings {
-	// no params no return value
-	void m1() {
-		System.out.println("Hello");
+public class GreentingsMain {
+	public static void main(String[] args) {
+		Greentings greet = new Greentings();
+		greet.m1();
+		System.out.println(greet.m2());
+		String str = greet.m2();
+		System.out.println(str);
+		greet.m3("Berlin");
+		String str1 = greet.m4("Samuel");
+		System.out.println(str1);
+		System.out.println(greet.m4("Samuel"));
 	}
 
-	// no param reurn type
-	String m2() {
-		return "Hello...!! How Are You ??";
-	}
-
-	// takes params no return type
-	void m3(String name) {
-		System.out.println("Hello " + name);
-	}
-
-	// Takes parans return value
-	String m4(String name) {
-		return "Welcome " + name;
-	}
 }

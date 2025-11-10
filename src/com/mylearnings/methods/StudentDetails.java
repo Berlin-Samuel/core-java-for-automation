@@ -1,14 +1,14 @@
 /**
- * FileName: Employee.java
+ * FileName: StudentDetails.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 05-Nov-2025
+ * Date     : 10-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
  * Licensed under the MIT License.
  * 
- * Copyright (c) 2025 Berlin Sa muel.
+ * Copyright (c) 2025 Berlin Samuel.
  * Permission is hereby granted, free of charge, to any person obtaining a copy  
  * of this software and associated documentation files (the "Software"), to deal  
  * in the Software without restriction, including without limitation the rights  
@@ -24,36 +24,27 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          05-Nov-2025        Berlin        Initial Code  
+ * 1.0          10-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 05-Nov-2025
+ * @since 10-Nov-2025
  */
-package com.mylearnings.oops;
+package com.mylearnings.methods;
 
-public class Employee {
-	int empId;
-	String empName;
-	String empRole;
-	double empSalary;
+public class StudentDetails {
+	int sid;
+	String sname;
+	char grade;
 
-	void display() {
-		System.out.println("Employee Id : " + empId);
-		System.out.println("Employee Name : " + empName);
-		System.out.println("Employee Role : " + empRole);
-		System.out.println("Employee Salary : " + empSalary);
-
+	void printStudentDetails() {
+		System.out.println(sid + " " + sname + " " + grade);
 	}
 
-	public static void main(String[] args) {
-		Employee emp1 = new Employee();
-		emp1.empId = 01;
-		emp1.empName = "Adam";
-		emp1.empRole = "Manager";
-		emp1.empSalary = 150456.23;
-		emp1.display();
-		
+	void setStudentDetails(int id, String name, char gr) {
+		sid = id;
+		sname = name;
+		grade = gr;
 	}
 
 }

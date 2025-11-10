@@ -1,8 +1,8 @@
 /**
- * FileName: GreentingsMain.java
+ * FileName: Student.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 05-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,25 +24,24 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          05-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 05-Nov-2025
  */
-package com.mylearnings.oops;
+package com.mylearnings.methods;
 
-public class GreentingsMain {
-	public static void main(String[] args) {
-		Greentings greet = new Greentings();
-		greet.m1();
-		System.out.println(greet.m2());
-		String str = greet.m2();
-		System.out.println(str);
-		greet.m3("Berlin");
-		String str1 = greet.m4("Samuel");
-		System.out.println(str1);
-		System.out.println(greet.m4("Samuel"));
+public class Student {
+	int sId;
+	String sName;
+	String bloodGroup;
+
+	void displayStudentRecord() {
+		System.out.println("Student Id :" + sId);
+		System.out.println("Student Name :" + sName);
+		System.out.println("Student Blood Group :" + bloodGroup);
+
 	}
 
 }

@@ -1,5 +1,5 @@
 /**
- * FileName: Student.java
+ * FileName: EmployeeDriver.java
  * Author   : Admin
  * Version  : 1.0
  * Date     : 05-Nov-2025
@@ -30,18 +30,14 @@
  * @version 1.0
  * @since 05-Nov-2025
  */
-package com.mylearnings.oops;
+package com.mylearnings.methods;
 
-public class Student {
-	int sId;
-	String sName;
-	String bloodGroup;
-
-	void displayStudentRecord() {
-		System.out.println("Student Id :" + sId);
-		System.out.println("Student Name :" + sName);
-		System.out.println("Student Blood Group :" + bloodGroup);
-
+public class StudentDriver {
+	public static void main(String[] args) {
+		Student str = new Student();
+		str.sId = 01;
+		str.sName = "William";
+		str.bloodGroup = "O+ve";
+		str.displayStudentRecord();
 	}
-
 }

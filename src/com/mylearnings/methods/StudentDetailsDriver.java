@@ -1,8 +1,8 @@
 /**
- * FileName: EmployeeDriver.java
+ * FileName: StudentDetailsDriver.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 05-Nov-2025
+ * Date     : 10-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,20 +24,29 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          05-Nov-2025        Berlin        Initial Code  
+ * 1.0          10-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 05-Nov-2025
+ * @since 10-Nov-2025
  */
-package com.mylearnings.oops;
+package com.mylearnings.methods;
 
-public class StudentDriver {
+public class StudentDetailsDriver {
 	public static void main(String[] args) {
-		Student str = new Student();
-		str.sId = 01;
-		str.sName = "William";
-		str.bloodGroup = "O+ve";
-		str.displayStudentRecord();
+		StudentDetails studentDetails = new StudentDetails();
+
+		// Assign Data using Object reference
+
+		studentDetails.sid = 01;
+		studentDetails.sname = "Berlin";
+		studentDetails.grade = 'S';
+		studentDetails.printStudentDetails();
+
+		// Assigning data by using user defined method
+		studentDetails.setStudentDetails(02, "Samuel", 'A');
+		studentDetails.printStudentDetails();
+		
 	}
+
 }
