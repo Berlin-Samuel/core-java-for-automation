@@ -1,14 +1,14 @@
 /**
- * FileName: Employee.java
+ * FileName: GreentingsMain.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 05-Nov-2025
+ * Date     : 10-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
  * Licensed under the MIT License.
  * 
- * Copyright (c) 2025 Berlin Sa muel.
+ * Copyright (c) 2025 Berlin Samuel.
  * Permission is hereby granted, free of charge, to any person obtaining a copy  
  * of this software and associated documentation files (the "Software"), to deal  
  * in the Software without restriction, including without limitation the rights  
@@ -24,36 +24,25 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          05-Nov-2025        Berlin        Initial Code  
+ * 1.0          10-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 05-Nov-2025
+ * @since 10-Nov-2025
  */
 package com.mylearnings.oops;
 
-public class Employee {
-	int empId;
-	String empName;
-	String empRole;
-	double empSalary;
-
-	void display() {
-		System.out.println("Employee Id : " + empId);
-		System.out.println("Employee Name : " + empName);
-		System.out.println("Employee Role : " + empRole);
-		System.out.println("Employee Salary : " + empSalary);
-
-	}
-
+public class GreentingsMain {
 	public static void main(String[] args) {
-		Employee emp1 = new Employee();
-		emp1.empId = 01;
-		emp1.empName = "Adam";
-		emp1.empRole = "Manager";
-		emp1.empSalary = 150456.23;
-		emp1.display();
-		
+		Greentings greet = new Greentings();
+		greet.m1();
+		System.out.println(greet.m2());
+		String str = greet.m2();
+		System.out.println(str);
+		greet.m3("Berlin");
+		String str1 = greet.m4("Samuel");
+		System.out.println(str1);
+		System.out.println(greet.m4("Samuel"));
 	}
 
 }

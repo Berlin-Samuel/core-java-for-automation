@@ -1,5 +1,5 @@
 /**
- * FileName: Employee.java
+ * FileName: Student.java
  * Author   : Admin
  * Version  : 1.0
  * Date     : 05-Nov-2025
@@ -8,7 +8,7 @@
  * 
  * Licensed under the MIT License.
  * 
- * Copyright (c) 2025 Berlin Sa muel.
+ * Copyright (c) 2025 Berlin Samuel.
  * Permission is hereby granted, free of charge, to any person obtaining a copy  
  * of this software and associated documentation files (the "Software"), to deal  
  * in the Software without restriction, including without limitation the rights  
@@ -32,28 +32,16 @@
  */
 package com.mylearnings.oops;
 
-public class Employee {
-	int empId;
-	String empName;
-	String empRole;
-	double empSalary;
+public class Student {
+	int sId;
+	String sName;
+	String bloodGroup;
 
-	void display() {
-		System.out.println("Employee Id : " + empId);
-		System.out.println("Employee Name : " + empName);
-		System.out.println("Employee Role : " + empRole);
-		System.out.println("Employee Salary : " + empSalary);
+	void displayStudentRecord() {
+		System.out.println("Student Id :" + sId);
+		System.out.println("Student Name :" + sName);
+		System.out.println("Student Blood Group :" + bloodGroup);
 
-	}
-
-	public static void main(String[] args) {
-		Employee emp1 = new Employee();
-		emp1.empId = 01;
-		emp1.empName = "Adam";
-		emp1.empRole = "Manager";
-		emp1.empSalary = 150456.23;
-		emp1.display();
-		
 	}
 
 }
