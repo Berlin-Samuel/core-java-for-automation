@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: Animal.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 18-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,26 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          18-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 18-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.overriding;
 
-public class ConstructorChaining {
-	int a;
-	int b;
+public class Animal {
 
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+	String color = "Black";
+
+	Animal() {
+		System.out.println("Hello World");
+
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
+	void eat() {
+		System.out.println(color);
+		System.out.println("Animal is Eating");
 	}
-	
+
 }

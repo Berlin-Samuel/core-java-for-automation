@@ -1,8 +1,9 @@
+
 /**
- * FileName: ConstructorChaining.java
+ * FileName: StaticMethod.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 11-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +25,40 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          11-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 11-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.methods;
 
-public class ConstructorChaining {
-	int a;
-	int b;
+public class StaticMethod {
 
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+	static int a;
+	static String dr = "5464";
+	int b = 20;
+
+	static void m1() {
+		System.out.println("Static Method Called");
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
+	void m() {
+		System.out.println("1234");
 	}
-	
+
+	void m2() {
+		System.out.println("Non Static Method Called");
+		m();
+	}
+
+	public static void main(String[] args) {
+		StaticMethod sm = new StaticMethod();
+		System.out.println(StaticMethod.a);
+		sm.m2();
+		System.out.println(sm.b);
+		System.out.println(dr.length());
+
+	}
+
 }

@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: DoctorDriver.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 12-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,34 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          12-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 12-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.encapsulation;
 
-public class ConstructorChaining {
-	int a;
-	int b;
+import java.util.Scanner;
 
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+public class DoctorDriver {
+	public static void main(String[] args) {
+		System.out.println("Enter Doctor Records");
+		System.out.println("====================");
+		Scanner scr = new Scanner(System.in);
+		System.out.println("Enter Doctor Id");
+		int drId = scr.nextInt();
+		System.out.println("Enter Doctor Name");
+		String drName = scr.next();
+		System.out.println("Enter Doctor Age");
+		int drAge = scr.nextInt();
+		System.out.println("Enter Doctor Speciality");
+		String drSpecialist = scr.next();
+		Doctor dr = new Doctor(drId, drName, drAge, drSpecialist);
+		System.out.println("Calling main Method");
+		System.exit(0);
+		dr.displayDoctorDetails();
+		scr.close();
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
-	}
-	
 }

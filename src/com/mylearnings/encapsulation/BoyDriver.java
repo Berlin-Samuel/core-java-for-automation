@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: BoyDriver.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 13-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,22 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          13-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 13-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.encapsulation;
 
-public class ConstructorChaining {
-	int a;
-	int b;
+public class BoyDriver {
+	public static void main(String[] args) {
+		Boy boy = new Boy("Vignesh", "Vicky");
+		System.out.println(boy.getName());
+		System.out.println(boy.getPetName());
+		boy.setPetName("Wiki");
+		System.out.println("After Chaning the Pet name :" + boy.getPetName());
 
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
-	}
-	
 }

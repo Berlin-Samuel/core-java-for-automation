@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: Puppy.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 14-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,26 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          14-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 14-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.inheritance;
 
-public class ConstructorChaining {
-	int a;
-	int b;
+public class Puppy extends Dog {
 
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+	void play() {
+		System.out.println("Puppy is playing");
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
+	public static void main(String[] args) {
+		Puppy pup = new Puppy();
+		pup.play();
+		pup.bark();
+		pup.eat();
+
 	}
-	
+
 }

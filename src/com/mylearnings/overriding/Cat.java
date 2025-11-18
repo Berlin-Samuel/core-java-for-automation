@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: Cat.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 18-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,31 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          18-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 18-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.overriding;
 
-public class ConstructorChaining {
-	int a;
-	int b;
-
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+public final class Cat extends Animal {
+	String color = "Brown";
+	Cat() { 
+		super();
+		System.out.println("Called Parent Constructor");
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
+	@Override
+	void eat() {
+		System.out.println(super.color);
+		System.out.println("Cat is Eating");
+
 	}
-	
+
+	public static void main(String[] args) {
+		Cat c = new Cat();
+		System.out.println(c.color);
+		c.eat();
+	}
 }

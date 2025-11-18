@@ -1,8 +1,8 @@
 /**
- * FileName: ConstructorChaining.java
+ * FileName: VikramPrabhu.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 10-Nov-2025
+ * Date     : 14-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,29 +24,29 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          10-Nov-2025        Berlin        Initial Code  
+ * 1.0          14-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 10-Nov-2025
+ * @since 14-Nov-2025
  */
-package com.mylearnings.constructors;
+package com.mylearnings.inheritance;
 
-public class ConstructorChaining {
-	int a;
-	int b;
-
-	ConstructorChaining() {
-		this(10, 20);
-		System.out.println("Default Constructor is Called");
+public class VikramPrabhu extends PrabhuGanesan {
+	// multilevel-inheritence
+	public void renovateBungalow() {
+		System.out.println("Shivaji Ganesan house was renowate by Vikram Prabhu");
 	}
 
-	ConstructorChaining(int a, int b) {
-		this.a = a;
-		this.b = b;
-		System.out.println("Parameterized Constructor is Called");
-		System.out.println("The Value of A " + a);
-		System.out.println("The Value of A " + b);
+	public void batManCar() {
+		System.out.println("This Car was bought by me");
 	}
-	
+
+	public static void main(String[] args) {
+		VikramPrabhu vkp = new VikramPrabhu();
+		vkp.house();
+		vkp.farmHouse();
+		vkp.batManCar();
+	}
+
 }
