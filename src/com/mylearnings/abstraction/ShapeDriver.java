@@ -1,8 +1,8 @@
 /**
- * FileName: Shape.java
+ * FileName: ShapeDriver.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 19-Nov-2025
+ * Date     : 21-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,26 +24,31 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          19-Nov-2025        Berlin        Initial Code  
+ * 1.0          21-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 19-Nov-2025
+ * @since 21-Nov-2025
  */
 package com.mylearnings.abstraction;
 
-public interface Shape {
-	int length =10;
-	int width =20;
-	void circle();
-
-	static void rectangle() {
-		System.out.println("This is a Rectangle static method");
-
+public class ShapeDriver implements Shape {
+	
+	public void circle() {
+		System.out.println("This is a circle abstract method");
 	}
 
-	default  void square() {
-		System.out.println("This is a Square default method ");
+	public static void main(String[] args) {
+		ShapeDriver shpdrv = new ShapeDriver();
+		shpdrv.circle();
+		shpdrv.square();
+		Shape.rectangle();
+		System.out.println("Interface Variables: " + Shape.length + " " + Shape.width);
+ 
+		Shape shpintr = new ShapeDriver();
+		shpintr.circle();
+		shpintr.square();
+
 	}
 
 }
