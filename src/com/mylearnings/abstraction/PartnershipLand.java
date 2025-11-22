@@ -33,7 +33,7 @@
 package com.mylearnings.abstraction;
 
 public class PartnershipLand extends FarmHouse {
-
+	// Hybrid Inheritence
 	public void ownedLand() {
 		System.out.println("Bought own Land");
 	}

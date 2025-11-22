@@ -1,5 +1,5 @@
 /**
- * FileName: Parent1.java
+ * FileName: Example.java
  * Author   : Admin
  * Version  : 1.0
  * Date     : 21-Nov-2025
@@ -30,13 +30,28 @@
  * @version 1.0
  * @since 21-Nov-2025
  */
-package com.mylearnings.abstraction;
+package com.mylearnings.wrapperclass;
 
-public interface Parent1 {
+public class AutoBoxing {
 
-	// Hybrid Inheritence
-	int x = 100;
+	public static void main(String[] args) {
 
-	void m1();
+		int i = 10;
+		double d = 20.3;
+		float f = 25.3f;
+		char c = 'a';
+		boolean b = false;
 
+		Integer iobj = i;
+		Double dobj = d;
+		Float fobj = f;
+		Character chobj = c;
+		Boolean bobj = b;
+
+		System.out.println(iobj);
+		System.out.println(dobj);
+		System.out.println(fobj);
+		System.out.println(chobj);
+		System.out.println(bobj);
+	}
 }

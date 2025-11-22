@@ -32,7 +32,8 @@
  */
 package com.mylearnings.abstraction;
 
-public class FarmHouse implements  Parent1, Parent2 {
+public class FarmHouse implements  Parent1, Parent2 {	
+	
 	public void farmHouse() {
 		System.out.println("It is a Farm House");
 	}

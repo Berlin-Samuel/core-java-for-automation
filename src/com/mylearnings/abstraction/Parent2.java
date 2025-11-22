@@ -34,6 +34,7 @@ package com.mylearnings.abstraction;
 
 public interface Parent2 {
 
+	// Hybrid Inheritence
 	int y = 200;
 
 	void m2();

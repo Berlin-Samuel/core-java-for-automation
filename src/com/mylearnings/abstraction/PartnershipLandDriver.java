@@ -33,6 +33,7 @@
 package com.mylearnings.abstraction;
 
 public class PartnershipLandDriver {
+	// Hybrid Inheritence
 	public static void main(String[] args) {
 		PartnershipLand ch1 = new PartnershipLand();
 		ch1.m1();

@@ -1,8 +1,8 @@
 /**
- * FileName: Parent1.java
+ * FileName: DataConversion1.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 21-Nov-2025
+ * Date     : 22-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,19 +24,35 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          21-Nov-2025        Berlin        Initial Code  
+ * 1.0          22-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 21-Nov-2025
+ * @since 22-Nov-2025
  */
-package com.mylearnings.abstraction;
+package com.mylearnings.wrapperclass;
 
-public interface Parent1 {
+public class DataConversion1 {
+	public static void main(String[] args) {
+		// int to string
+		int x = 100;
+		String s = String.valueOf(x);
+		System.out.println(s);
+		System.out.println("============");
 
-	// Hybrid Inheritence
-	int x = 100;
+		double db = 22.56;
+		String s1 = String.valueOf(db);
+		System.out.println(s1);
+		System.out.println("============");
 
-	void m1();
+		boolean b = true;
+		String s2 = String.valueOf(b);
+		System.out.println(s2);
+		System.out.println("============");
+
+		char c = 'w';
+		String s3 = String.valueOf(c);
+		System.out.println(s3);
+	}
 
 }

@@ -1,8 +1,8 @@
 /**
- * FileName: Parent1.java
+ * FileName: UnBoxing.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 21-Nov-2025
+ * Date     : 22-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,19 +24,33 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          21-Nov-2025        Berlin        Initial Code  
+ * 1.0          22-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 21-Nov-2025
+ * @since 22-Nov-2025
  */
-package com.mylearnings.abstraction;
+package com.mylearnings.wrapperclass;
 
-public interface Parent1 {
+public class UnBoxing {
+	public static void main(String[] args) {
+		Integer iobj = 120;
+		Double dobj = 23.5;
+		Float fobj = 12.6f;
+		Character chobj = 'h';
+		Boolean bobj = true;
 
-	// Hybrid Inheritence
-	int x = 100;
+		int i = iobj;
+		double d = dobj;
+		float f = fobj;
+		char c = chobj;
+		boolean b = bobj;
 
-	void m1();
+		System.out.println(i);
+		System.out.println(d);
+		System.out.println(f);
+		System.out.println(c);
+		System.out.println(b);
 
+	}
 }

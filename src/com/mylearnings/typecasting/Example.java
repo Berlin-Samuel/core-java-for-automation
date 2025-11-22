@@ -1,8 +1,8 @@
 /**
- * FileName: Parent1.java
+ * FileName: Example.java
  * Author   : Admin
  * Version  : 1.0
- * Date     : 21-Nov-2025
+ * Date     : 22-Nov-2025
  * 
  * This file is part of a personal learning project.
  * 
@@ -24,19 +24,27 @@
  * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
  * 
  * REVISION     DATE           NAME         DESCRIPTION  
- * 1.0          21-Nov-2025        Berlin        Initial Code  
+ * 1.0          22-Nov-2025        Berlin        Initial Code  
  * 
  * @author Berlin
  * @version 1.0
- * @since 21-Nov-2025
+ * @since 22-Nov-2025
  */
-package com.mylearnings.abstraction;
+package com.mylearnings.typecasting;
 
-public interface Parent1 {
+public class Example {
+	public static void main(String[] args) {
+		// widening - implicit
+		int x = 123;
+		double d = x;
+		System.out.println(d);
+		System.out.println("==========");
 
-	// Hybrid Inheritence
-	int x = 100;
+		// narrowing - explicit
+		double db = 23.6;
+		int y = (int) db;
+		System.out.println(y);
 
-	void m1();
+	}
 
 }
