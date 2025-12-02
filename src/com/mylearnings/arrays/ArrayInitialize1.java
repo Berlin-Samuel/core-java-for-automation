@@ -36,7 +36,7 @@ public class ArrayInitialize1 {
 	public static void main(String[] args) {
 		String str = new String("Hello");
 		System.out.println("Print str value " + str);
-		int arr[] = { 4, 2, 6, 7, 10 };
+		int arr[] = { 4, 2, 6, 7, 10,10 };
 		arr[1] = 50;
 		// System.out.println("To string"+arr.toString());
 		System.out.println("Array Length " + arr.length);

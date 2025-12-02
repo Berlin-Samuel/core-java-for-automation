@@ -48,7 +48,7 @@ public class AIOBEExample {
 		} catch (ArrayIndexOutOfBoundsException e) {
 			System.out.println("Provide the valid Data");
 		}
-		sr.close();
+		sr.close(); 
 	}
 
 }
